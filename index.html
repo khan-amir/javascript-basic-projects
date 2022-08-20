@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Projects</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            margin: 10px;
+            height: 15vh;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .col:hover{
+            background-color: rgb(51, 151, 156);
+            box-shadow: 5px 10px 8px 10px #888888;
+            transition: 0.3s;
+        }
+
+        .mouse-hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col mouse-hover btn counter">Counter</div>
+        <div class="col mouse-hover btn color-flipper">Color Flipper</div>
+        <div class="col mouse-hover btn reviews">Reviews</div>
+        <div class="col mouse-hover btn navbar">Navbar</div>
+        <div class="col mouse-hover btn sidebar">Sidebar</div>
+        <div class="col mouse-hover btn modal">Modal</div>
+    </div>
+    <div class="container">
+        <div class="col mouse-hover btn questions">Questions</div>
+        <div class="col mouse-hover btn menu">Menu</div>
+        <div class="col mouse-hover btn video">Video</div>
+        <div class="col mouse-hover btn scroll">Scroll</div>
+        <div class="col mouse-hover btn">Placeholder</div>
+        <div class="col mouse-hover btn">Placeholder</div>
+    </div>
+</body>
+<script>
+    const buttons = document.querySelectorAll(".btn");
+    buttons.forEach((button) =>
+    button.addEventListener('click', function (e) {
+        const styles = e.currentTarget.classList;
+        if (styles.contains("counter")) {
+            window.location="./1-counter/index.html";
+        }
+        else if (styles.contains('color-flipper')){
+            window.location="./2-color-flipper/index.html";
+        }
+        else if (styles.contains('reviews')) {
+            window.location="./3-reviews/index.html";
+        }
+        else if (styles.contains('navbar')) {
+            window.location="./4-navbar/index.html";
+        }
+        else if (styles.contains('sidebar')) {
+            window.location="./5-sidebar/index.html";
+        }
+         else if (styles.contains('modal')) {
+            window.location="./6-modal/index.html";
+        }
+        else if (styles.contains('questions')) {
+            window.location="./7-questions/index.html";
+        }
+        else if (styles.contains('menu')) {
+            window.location="./8-menu/index.html";
+        }
+        else if (styles.contains('video')) {
+            window.location="./9-video/index.html";
+        }
+        else if (styles.contains('scroll')) {
+            window.location="./10-scroll/index.html";
+        }
+        else{
+            alert("Element not found")
+        };
+    }))
+</script>
+</html>
