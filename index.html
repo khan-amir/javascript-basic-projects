@@ -43,16 +43,23 @@
         <div class="col mouse-hover btn reviews">Reviews</div>
         <div class="col mouse-hover btn navbar">Navbar</div>
         <div class="col mouse-hover btn sidebar">Sidebar</div>
-        <div class="col mouse-hover btn modal">Modal</div>
+
     </div>
     <div class="container">
+        <div class="col mouse-hover btn modal">Modal</div>
         <div class="col mouse-hover btn questions">Questions</div>
         <div class="col mouse-hover btn menu">Menu</div>
         <div class="col mouse-hover btn video">Video</div>
         <div class="col mouse-hover btn scroll">Scroll</div>
-        <div class="col mouse-hover btn">Placeholder</div>
-        <div class="col mouse-hover btn">Placeholder</div>
     </div>
+    <div class="container">
+        <div class="col mouse-hover btn tabs">Tabs</div>
+        <div class="col mouse-hover btn countdown-timer">Countdown-timer</div>
+        <div class="col mouse-hover btn lorem-ipsum">Lorem-ipsum</div>
+        <div class="col mouse-hover btn grocery-bud">Grocery-bud</div>
+        <div class="col mouse-hover btn slider">Slider</div>
+    </div>
+
 </body>
 <script>
     const buttons = document.querySelectorAll(".btn");
@@ -88,6 +95,21 @@
         }
         else if (styles.contains('scroll')) {
             window.location="./10-scroll/index.html";
+        }
+        else if (styles.contains('tabs')) {
+            window.location="./11-tabs/index.html";
+        }
+        else if (styles.contains('countdown-timer')) {
+            window.location="./12-countdown-timer/index.html";
+        }
+        else if (styles.contains('lorem-ipsum')) {
+            window.location="./13-lorem-ipsum/index.html";
+        }
+        else if (styles.contains('grocery-bud')) {
+            window.location="./14-grocery-bud/index.html";
+        }
+        else if (styles.contains('slider')) {
+            window.location="./15-slider/index.html";
         }
         else{
             alert("Element not found")
